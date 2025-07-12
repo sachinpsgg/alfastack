@@ -151,31 +151,6 @@ export const HeroSection = forwardRef<HTMLElement, HeroSectionProps>(
                 ALFASTACK
               </GlitchText>
             </motion.div>
-            <motion.div
-              className="text-7xl md:text-8xl text-foreground/70 font-light tracking-[0.3em] mt-6"
-              initial={{ y: 200, rotateX: -90, scale: 0.5 }}
-              animate={{ y: 0, rotateX: 0, scale: 1 }}
-              transition={{ duration: 1.2, delay: 1, ease: "easeOut" }}
-            >
-              <motion.span
-                animate={{
-                  background: [
-                    "linear-gradient(45deg, rgba(139,92,246,0.8), rgba(56,189,248,0.8))",
-                    "linear-gradient(45deg, rgba(56,189,248,0.8), rgba(236,72,153,0.8))",
-                    "linear-gradient(45deg, rgba(236,72,153,0.8), rgba(251,146,60,0.8))",
-                    "linear-gradient(45deg, rgba(251,146,60,0.8), rgba(139,92,246,0.8))",
-                  ],
-                }}
-                transition={{ duration: 4, repeat: Infinity }}
-                style={{
-                  backgroundClip: "text",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                }}
-              >
-                TRANSFORMS
-              </motion.span>
-            </motion.div>
           </motion.h1>
 
           <motion.div
@@ -186,12 +161,6 @@ export const HeroSection = forwardRef<HTMLElement, HeroSectionProps>(
           >
             <motion.p
               className="text-2xl md:text-3xl text-muted-foreground leading-relaxed font-light"
-              animate={{
-                background: [
-                  "linear-gradient(90deg, rgba(255,255,255,0.8) 0%, rgba(139,92,246,0.9) 50%, rgba(255,255,255,0.8) 100%)",
-                  "linear-gradient(90deg, rgba(56,189,248,0.9) 0%, rgba(255,255,255,0.8) 50%, rgba(236,72,153,0.9) 100%)",
-                ],
-              }}
               transition={{
                 duration: 4,
                 repeat: Infinity,
